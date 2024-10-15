@@ -45,3 +45,5 @@ The logistic regression model was evaluated using accuracy, precision, recall, a
 
 ### **Conclusion**  
 The logistic regression model delivers excellent predictive accuracy overall, with near-perfect performance on healthy loans and strong recall for high-risk loans. However, the imbalance in the dataset slightly affects the precision for high-risk loans.
+
+This imbalance influences the predictions: the model identifies healthy loans with 100% precision and 99% recall. In contrast, for high-risk loans (label ‘1’), it achieves a precision of 84% and a higher recall of 94%. This suggests the model is more likely to correctly flag high-risk loans but at the expense of occasionally misclassifying non-risky loans as risky. The macro average scores (precision: 0.92, recall: 0.97) further confirm the performance imbalance between the two classes.
